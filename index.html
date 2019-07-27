@@ -13154,7 +13154,7 @@ a.anchor-link {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="DKIST-Adventures-in-Astropy">DKIST Adventures in Astropy<a class="anchor-link" href="#DKIST-Adventures-in-Astropy">&#182;</a></h1><h3 id="(and-related-packages...)">(and related packages...)<a class="anchor-link" href="#(and-related-packages...)">&#182;</a></h3><h2 id="Stuart-Mumford">Stuart Mumford<a class="anchor-link" href="#Stuart-Mumford">&#182;</a></h2><p><a href="http://nso.edu">
+<h1 id="DKIST-Adventures-in-Astropy">DKIST Adventures in Astropy<a class="anchor-link" href="#DKIST-Adventures-in-Astropy">&#182;</a></h1><h2 id="(...-and-related-packages.)"><em>(... and related packages.)</em><a class="anchor-link" href="#(...-and-related-packages.)">&#182;</a></h2><h2 id="Stuart-Mumford">Stuart Mumford<a class="anchor-link" href="#Stuart-Mumford">&#182;</a></h2><p><a href="http://nso.edu">
 <img style='float: left; width: 30%; margin-top: 115px; height: 25%;' src='images/NSOlogo_transparent.gif'/>
 </a>
 <a href="http://shef.ac.uk">
@@ -13166,26 +13166,32 @@ a.anchor-link {
 
 </div>
 </div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Some stuff in the slide.</p>
-
-</div>
-</div>
 </div></section></section><section><section>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Another-slide,-with-columns!">Another slide, with columns!<a class="anchor-link" href="#Another-slide,-with-columns!">&#182;</a></h1><div class='left'>
+<h1 id="The-Daniel-K.-Inouye-Solar-Telescope-(DKIST)">The Daniel K. Inouye Solar Telescope (DKIST)<a class="anchor-link" href="#The-Daniel-K.-Inouye-Solar-Telescope-(DKIST)">&#182;</a></h1><div class='left'>
 
-This is on the right!
+<p style="font-size:10px;">
+<img style='width: 80%; margin-bottom:0px;' src='images/DKISTSite.jpg'/>
+&copy; NSO/AURA/NSF
+</p>
 
 </div><div class='right'>
-
-This is on the left!
-
+    <ul>
+        <li>
+            4m Mirror.
+        </li>
+        <li>
+            5 First light instruments.
+        </li>
+        <li>
+            Estimated raw datarate of 3 Pb/year.
+        </li>
+        <li>
+            Operational early 2020.
+        </li>
+    </ul>
 </div>
 </div>
 </div>
@@ -13193,25 +13199,32 @@ This is on the left!
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Equations-and-Stuff!">Equations and Stuff!<a class="anchor-link" href="#Equations-and-Stuff!">&#182;</a></h1><p style="text-align: center;"> This text is at the top.</p><div class='left' style="border-right: solid">
+<h1 id="Five-Instruments,-Five-Dimensions,-many-FITS-files">Five Instruments, Five Dimensions, <em>many</em> FITS files<a class="anchor-link" href="#Five-Instruments,-Five-Dimensions,-many-FITS-files">&#182;</a></h1><ul>
+<li>Five dimensions:<ul>
+<li>Space (latitude)</li>
+<li>Space (longitude)</li>
+<li>Wavelength</li>
+<li>Time</li>
+<li>Stokes Profile</li>
+</ul>
+</li>
+<li>All datasets exported as many 2D fits files.</li>
+<li>Each instrument can be reconfigured to meet science needs, and produce varied data products.</li>
+</ul>
 
-These are some equations:
-
-$F \approx 3 \times 10^7$ ergs s<sup>-1</sup> cm <sup>-2</sup>,
-
-<br/>
-
-$F_{AR} \approx 10^3 - 10^4$ ergs s<sup>-1</sup> cm <sup>-2</sup>,
-
-</div><div class='right'>
-
-$\rho_0 = 23.6 m_p N_e$
-
-<br/>
-
-LOOK Numbers!
-
-</div><div style="clear: both;"></div><h2 id="Markdown!">Markdown!<a class="anchor-link" href="#Markdown!">&#182;</a></h2><p>Gone back to plain markdown now, you can't have markdown in html block elements (live div's).</p>
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Initial-User-Tools-Challenges">Initial User Tools Challenges<a class="anchor-link" href="#Initial-User-Tools-Challenges">&#182;</a></h1><ul>
+<li>No existing support for multi-dimensional solar data in Python.</li>
+<li>Tabular and discontiguious world coordinate support.</li>
+<li>How to expose all the FITS files as a single 5D array?</li>
+<li>Python interface to data centre search API.</li>
+<li>Minimize data transfer for users and data centre.</li>
+</ul>
 
 </div>
 </div>
@@ -13219,59 +13232,22 @@ LOOK Numbers!
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Code!">Code!<a class="anchor-link" href="#Code!">&#182;</a></h1>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[5]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># it&#39;s a notebook after all</span>
-
-<span class="k">def</span> <span class="nf">my_awesome_function</span><span class="p">(</span><span class="n">awesomeness</span><span class="p">):</span>
-    <span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    You are awesome.</span>
-<span class="sd">    &quot;&quot;&quot;</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Hello, you awesome person.&quot;</span><span class="p">,</span> <span class="n">awesomeness</span><span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[6]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">my_awesome_function</span><span class="p">(</span><span class="s2">&quot;Awesome!&quot;</span><span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>Hello, you awesome person. Awesome!
-</pre>
-</div>
-</div>
+<h1 id="DKIST-Data-Centre">DKIST Data Centre<a class="anchor-link" href="#DKIST-Data-Centre">&#182;</a></h1><ul>
+<li>8 people.</li>
+<li>One (soon to be two) calibration engineer.</li>
+<li>One developer working on user software.</li>
+<li>All calibration, user tools, and a lot of infrastructure is all Python.</li>
+</ul>
 
 </div>
 </div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 
+</div>
+</div>
 </div></section></section>
 </div>
 </div>
