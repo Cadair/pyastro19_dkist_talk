@@ -163,7 +163,13 @@ a.anchor-link {
                   condition: function() { return !!document.body.classList; } }
             ]
         });
-        var update = function(event){
+        Reveal.configure({
+          keyboard: {
+            40: 'next',
+            38: 'prev'
+          }
+        });
+          var update = function(event){
           if(MathJax.Hub.getAllJax(Reveal.getCurrentSlide())){
             MathJax.Hub.Rerender(Reveal.getCurrentSlide());
           }

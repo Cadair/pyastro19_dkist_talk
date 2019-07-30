@@ -13183,10 +13183,10 @@ a.anchor-link {
             4m Mirror.
         </li>
         <li>
-            5 First light instruments.
+            5 first light instruments.
         </li>
         <li>
-            Estimated raw datarate of 3 Pb/year.
+            Estimated raw datarate of 3 Pb/year (uncompressed).
         </li>
         <li>
             Operational early 2020.
@@ -13218,12 +13218,13 @@ a.anchor-link {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Initial-User-Tools-Challenges">Initial User Tools Challenges<a class="anchor-link" href="#Initial-User-Tools-Challenges">&#182;</a></h1><ul>
+<h1 id="User-Tools-Challenges">User Tools Challenges<a class="anchor-link" href="#User-Tools-Challenges">&#182;</a></h1><ul>
 <li>No existing support for multi-dimensional solar data in Python.</li>
 <li>Tabular and discontiguious world coordinate support.</li>
 <li>How to expose all the FITS files as a single 5D array?</li>
 <li>Python interface to data centre search API.</li>
 <li>Minimize data transfer for users and data centre.</li>
+<li>Provide a level of polish that will persuade people to transition to Python!</li>
 </ul>
 
 </div>
@@ -13234,10 +13235,11 @@ a.anchor-link {
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="DKIST-Data-Centre">DKIST Data Centre<a class="anchor-link" href="#DKIST-Data-Centre">&#182;</a></h1><ul>
 <li>8 people.</li>
-<li>One (soon to be two) calibration engineer.</li>
-<li>One developer working on user software.</li>
+<li>One calibration engineer. (Would you like to be the second?)</li>
+<li>One developer working on user software (me!).</li>
 <li>All calibration, user tools, and a lot of infrastructure is all Python.</li>
 </ul>
+<p><a href="https://tinyurl.com/dkist-calibration-job">https://tinyurl.com/dkist-calibration-job</a></p>
 
 </div>
 </div>
@@ -13245,7 +13247,7 @@ a.anchor-link {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="What-to-Use?">What to Use?<a class="anchor-link" href="#What-to-Use?">&#182;</a></h1>
+<h1 id="What-to-use-to-make-my-job-easier-possible?!">What to use to make my job <del>easier</del> possible?!<a class="anchor-link" href="#What-to-use-to-make-my-job-easier-possible?!">&#182;</a></h1>
 </div>
 </div>
 </div></section><section>
@@ -13260,14 +13262,14 @@ a.anchor-link {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="WCS">WCS<a class="anchor-link" href="#WCS">&#182;</a></h1><div class='left'>
+<h1 id="WCS">WCS<a class="anchor-link" href="#WCS">&#182;</a></h1><div class='left fragment'>
 
 <p style="font-size:10px;">
 <img style='width: 75%; margin-bottom:0px; display: block; margin-left: auto; margin-right: auto;' src='images/wcs_save_tab.png'/>
 <img style='width: 75%; margin-bottom:0px; display: block; margin-left: auto; margin-right: auto;' src='images/wcs_irregular_tab.png'/>
 </p>
 
-</div><div class='right'>
+</div><div class='right fragment'>
 <img style='width: 90%; margin-bottom:0px; display: block; margin-left: auto; margin-right: auto;' src='images/gwcs_docs.png'/>
 
 </div>
@@ -13277,7 +13279,7 @@ a.anchor-link {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="ASDF">ASDF<a class="anchor-link" href="#ASDF">&#182;</a></h1><p><img style='width: 75%; margin-bottom:0px; display: block; margin-left: auto; margin-right: auto;' src='images/asdf_docs.png'/></p>
+<p><img style='width: 75%; margin-bottom:0px; display: block; margin-left: auto; margin-right: auto;' src='images/asdf_docs.png'/></p>
 
 </div>
 </div>
@@ -13315,18 +13317,26 @@ a.anchor-link {
 <h1 id="gWCS">gWCS<a class="anchor-link" href="#gWCS">&#182;</a></h1><div class='left'>
 <img style='width: 80%; margin-bottom:0px;' src='images/prs/gwcs/frame_schemas.png'/>
 
-</div><p>&lt;div class='right
-<img style='width: 80%; margin-bottom:0px;' src='images/gwcs_stack.png'/>
-&lt;/div&gt;</p>
+<img style='width: 80%; margin-bottom:0px;' src='images/prs/gwcs/low_level_wcs.png'/>
 
+</div><div class='right'>
+<img style='width: 80%; margin-bottom:0px;' src='images/gwcs_stack.png'/>
+</div>
 </div>
 </div>
 </div></section><section>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="ASDF">ASDF<a class="anchor-link" href="#ASDF">&#182;</a></h1><p><img style='width: 75%; margin-bottom:0px; display: block; margin-left: auto; margin-right: auto;' src='images/prs/asdf/external_array_reference.png'/></p>
+<h1 id="ASDF">ASDF<a class="anchor-link" href="#ASDF">&#182;</a></h1><div class='left'>
+<img style='width: 75%; margin-bottom:0px; display: block; margin-left: auto; margin-right: auto;' src='images/prs/asdf/external_array_reference.png'/>
 
+</div><div class='right'>
+
+<img style='width: 75%; margin-bottom:0px; display: block; margin-left: auto; margin-right: auto;' src='images/prs/astropy/asdf_coordinates.png'/>
+
+<img style='width: 75%; margin-bottom:0px; display: block; margin-left: auto; margin-right: auto;' src='images/prs/sunpy_asdf.png'/>
+</div>
 </div>
 </div>
 </div></section></section><section><section>
@@ -13365,11 +13375,20 @@ a.anchor-link {
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="The-Future">The Future<a class="anchor-link" href="#The-Future">&#182;</a></h1><ul>
-<li>Actually write the DKIST specific bits!</li>
+<li>Actually write the DKIST specific bits! (Search, Download, cache etc).</li>
 <li>Continue enouraging people (Tom) to make things APE14 compatible (reproject etc).</li>
-<li>Start thinking about analysis tools, fitting over 5D cubes?!</li>
+<li>Start thinking about analysis tools, i.e. fitting over 5D cubes?!</li>
+<li>Glue and other exploration tools.</li>
+<li>Performance testing and optimisation.</li>
 </ul>
 
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Thank-you">Thank you<a class="anchor-link" href="#Thank-you">&#182;</a></h1><h2 id="To-everyone-who-has-written-all-this-code...">To everyone who has written all this code...<a class="anchor-link" href="#To-everyone-who-has-written-all-this-code...">&#182;</a></h2>
 </div>
 </div>
 </div></section></section>
@@ -13415,7 +13434,13 @@ a.anchor-link {
                   condition: function() { return !!document.body.classList; } }
             ]
         });
-        var update = function(event){
+        Reveal.configure({
+          keyboard: {
+            40: 'next',
+            38: 'prev'
+          }
+        });
+          var update = function(event){
           if(MathJax.Hub.getAllJax(Reveal.getCurrentSlide())){
             MathJax.Hub.Rerender(Reveal.getCurrentSlide());
           }
